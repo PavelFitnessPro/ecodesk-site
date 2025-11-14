@@ -277,108 +277,342 @@
         </div>
     </div>
 
-    <section id="configs" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-5xl md:text-6xl font-bold text-center mb-16 text-emerald-900">
-                Конфигурации
-            </h2>
-            
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="border-4 border-emerald-200 rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 fade-in">
-                    <div class="bg-emerald-100 p-8 h-64 flex items-center justify-center">
-                        <div class="text-center">
-                            <p class="text-emerald-700 font-bold text-xl mb-2">Базовая конфигурация</p>
-                            <p class="text-emerald-600 text-sm">140×100 см, серый/бежевый</p>
-                        </div>
-                    </div>
-                    <div class="p-8">
-                        <h3 class="text-3xl font-bold mb-2 text-emerald-900">Базовая</h3>
-                        <p class="text-4xl font-bold text-orange-600 mb-6">29 990 ₽</p>
-                        <ul class="space-y-3 mb-8 text-stone-600">
-                            <li class="flex items-start gap-2">
-                                <span class="text-emerald-600">✓</span>
-                                <span>140×100 см, высота 90 см</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-emerald-600">✓</span>
-                                <span>12 модулей</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-emerald-600">✓</span>
-                                <span>Стандартные цвета (серый, бежевый)</span>
-                            </li>
-                        </ul>
-                        <a href="#form" class="block w-full bg-emerald-600 hover:bg-emerald-700 text-white text-center py-4 rounded-full font-semibold transition-colors duration-300">
-                            Заказать
-                        </a>
+   <section id="configs" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-5xl md:text-6xl font-bold text-center mb-8 text-emerald-900">
+            Конфигурации
+        </h2>
+        <p class="text-center text-xl text-stone-600 mb-16">
+            Выберите подходящую комплектацию — чем больше ✓, тем функциональнее стол
+        </p>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Базовая конфигурация -->
+            <div class="border-4 border-emerald-200 rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 fade-in">
+                <div class="bg-emerald-100 p-8 h-64 flex items-center justify-center">
+                    <div class="text-center">
+                        <p class="text-emerald-700 font-bold text-xl mb-2">Базовая конфигурация</p>
+                        <p class="text-emerald-600 text-sm">140×100 см, серый/бежевый</p>
                     </div>
                 </div>
-
-                <div class="border-4 border-orange-400 rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 fade-in relative">
-                    <div class="absolute top-4 right-4 bg-orange-500 text-white px-4 py-2 rounded-full text-sm font-bold z-10">
-                        Популярно
-                    </div>
-                    <div class="bg-orange-100 p-8 h-64 flex items-center justify-center">
-                        <div class="text-center">
-                            <p class="text-orange-700 font-bold text-xl mb-2">Расширенная конфигурация</p>
-                            <p class="text-orange-600 text-sm">160×100 см с органайзерами</p>
+                <div class="p-8">
+                    <h3 class="text-3xl font-bold mb-2 text-emerald-900">Базовая</h3>
+                    <p class="text-4xl font-bold text-orange-600 mb-6">29 990 ₽</p>
+                    
+                    <!-- Характеристики -->
+                    <div class="space-y-3 mb-8 text-stone-700">
+                        <div class="flex items-start gap-3">
+                            <span class="text-emerald-600 text-xl flex-shrink-0">📏</span>
+                            <div class="flex-1">
+                                <p class="font-semibold text-sm text-stone-800">Размер столешницы</p>
+                                <p class="text-sm">140×100 см</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-3">
+                            <span class="text-red-500 text-xl flex-shrink-0">✗</span>
+                            <div class="flex-1">
+                                <p class="font-semibold text-sm text-stone-800">Регулировка высоты</p>
+                                <p class="text-sm text-stone-400">Фиксированная 90 см</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-3">
+                            <span class="text-emerald-600 text-xl flex-shrink-0">✓</span>
+                            <div class="flex-1">
+                                <p class="font-semibold text-sm text-stone-800">Модулей в комплекте</p>
+                                <p class="text-sm">12 штук</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-3">
+                            <span class="text-emerald-600 text-xl flex-shrink-0">✓</span>
+                            <div class="flex-1">
+                                <p class="font-semibold text-sm text-stone-800">Выбор цвета</p>
+                                <p class="text-sm">Серый, бежевый</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-3">
+                            <span class="text-red-500 text-xl flex-shrink-0">✗</span>
+                            <div class="flex-1">
+                                <p class="font-semibold text-sm text-stone-400">Органайзеры</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-3">
+                            <span class="text-red-500 text-xl flex-shrink-0">✗</span>
+                            <div class="flex-1">
+                                <p class="font-semibold text-sm text-stone-400">Кабель-менеджмент</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-3">
+                            <span class="text-red-500 text-xl flex-shrink-0">✗</span>
+                            <div class="flex-1">
+                                <p class="font-semibold text-sm text-stone-400">Подсветка</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-3">
+                            <span class="text-red-500 text-xl flex-shrink-0">✗</span>
+                            <div class="flex-1">
+                                <p class="font-semibold text-sm text-stone-400">Крепления для техники</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-3">
+                            <span class="text-red-500 text-xl flex-shrink-0">✗</span>
+                            <div class="flex-1">
+                                <p class="font-semibold text-sm text-stone-400">USB-хабы и розетки</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-3">
+                            <span class="text-emerald-600 text-xl flex-shrink-0">🛡️</span>
+                            <div class="flex-1">
+                                <p class="font-semibold text-sm text-stone-800">Гарантия</p>
+                                <p class="text-sm">5 лет</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="p-8">
-                        <h3 class="text-3xl font-bold mb-2 text-emerald-900">Расширенная</h3>
-                        <p class="text-4xl font-bold text-orange-600 mb-6">42 990 ₽</p>
-                        <ul class="space-y-3 mb-8 text-stone-600">
-                            <li class="flex items-start gap-2">
-                                <span class="text-emerald-600">✓</span>
-                                <span>160×100 см, высота регулируемая</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-emerald-600">✓</span>
-                                <span>15 модулей + органайзеры</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-emerald-600">✓</span>
-                                <span>Выбор цвета</span>
-                            </li>
-                        </ul>
-                        <a href="#form" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center py-4 rounded-full font-semibold transition-colors duration-300">
-                            Заказать
-                        </a>
+                    
+                    <div class="bg-emerald-50 rounded-xl p-3 mb-6">
+                        <p class="text-xs text-center text-emerald-700">
+                            ✓ 4 из 10 функций • Идеально для начала
+                        </p>
+                    </div>
+                    
+                    <a href="#form" class="block w-full bg-emerald-600 hover:bg-emerald-700 text-white text-center py-4 rounded-full font-semibold transition-colors duration-300">
+                        Заказать
+                    </a>
+                </div>
+            </div>
+
+            <!-- Расширенная конфигурация -->
+            <div class="border-4 border-orange-400 rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 fade-in relative">
+                <div class="absolute top-4 right-4 bg-orange-500 text-white px-4 py-2 rounded-full text-sm font-bold z-10">
+                    Популярно
+                </div>
+                <div class="bg-orange-100 p-8 h-64 flex items-center justify-center">
+                    <div class="text-center">
+                        <p class="text-orange-700 font-bold text-xl mb-2">Расширенная конфигурация</p>
+                        <p class="text-orange-600 text-sm">160×100 см с органайзерами</p>
                     </div>
                 </div>
-
-                <div class="border-4 border-yellow-400 rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 fade-in">
-                    <div class="bg-yellow-100 p-8 h-64 flex items-center justify-center">
-                        <div class="text-center">
-                            <p class="text-yellow-700 font-bold text-xl mb-2">Премиум конфигурация</p>
-                            <p class="text-yellow-600 text-sm">До 180 см с кабель-менеджментом и подсветкой</p>
+                <div class="p-8">
+                    <h3 class="text-3xl font-bold mb-2 text-emerald-900">Расширенная</h3>
+                    <p class="text-4xl font-bold text-orange-600 mb-6">42 990 ₽</p>
+                    
+                    <!-- Характеристики -->
+                    <div class="space-y-3 mb-8 text-stone-700">
+                        <div class="flex items-start gap-3">
+                            <span class="text-emerald-600 text-xl flex-shrink-0">📏</span>
+                            <div class="flex-1">
+                                <p class="font-semibold text-sm text-stone-800">Размер столешницы</p>
+                                <p class="text-sm">160×100 см</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-3">
+                            <span class="text-emerald-600 text-xl flex-shrink-0">✓</span>
+                            <div class="flex-1">
+                                <p class="font-semibold text-sm text-stone-800">Регулировка высоты</p>
+                                <p class="text-sm">50-120 см (шаг 10 см)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-3">
+                            <span class="text-emerald-600 text-xl flex-shrink-0">✓</span>
+                            <div class="flex-1">
+                                <p class="font-semibold text-sm text-stone-800">Модулей в комплекте</p>
+                                <p class="text-sm">15 штук + органайзеры</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-3">
+                            <span class="text-emerald-600 text-xl flex-shrink-0">✓</span>
+                            <div class="flex-1">
+                                <p class="font-semibold text-sm text-stone-800">Выбор цвета</p>
+                                <p class="text-sm">7 цветов на выбор</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-3">
+                            <span class="text-emerald-600 text-xl flex-shrink-0">✓</span>
+                            <div class="flex-1">
+                                <p class="font-semibold text-sm text-stone-800">Органайзеры</p>
+                                <p class="text-sm">3 модуля включено</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-3">
+                            <span class="text-emerald-600 text-xl flex-shrink-0">✓</span>
+                            <div class="flex-1">
+                                <p class="font-semibold text-sm text-stone-800">Кабель-менеджмент</p>
+                                <p class="text-sm">Встроенные каналы</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-3">
+                            <span class="text-red-500 text-xl flex-shrink-0">✗</span>
+                            <div class="flex-1">
+                                <p class="font-semibold text-sm text-stone-400">Подсветка</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-3">
+                            <span class="text-emerald-600 text-xl flex-shrink-0">✓</span>
+                            <div class="flex-1">
+                                <p class="font-semibold text-sm text-stone-800">Крепления для техники</p>
+                                <p class="text-sm">VESA-совместимые</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-3">
+                            <span class="text-red-500 text-xl flex-shrink-0">✗</span>
+                            <div class="flex-1">
+                                <p class="font-semibold text-sm text-stone-400">USB-хабы и розетки</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-3">
+                            <span class="text-emerald-600 text-xl flex-shrink-0">🛡️</span>
+                            <div class="flex-1">
+                                <p class="font-semibold text-sm text-stone-800">Гарантия</p>
+                                <p class="text-sm">5 лет</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="p-8">
-                        <h3 class="text-3xl font-bold mb-2 text-emerald-900">Премиум</h3>
-                        <p class="text-4xl font-bold text-orange-600 mb-6">59 990 ₽</p>
-                        <ul class="space-y-3 mb-8 text-stone-600">
-                            <li class="flex items-start gap-2">
-                                <span class="text-emerald-600">✓</span>
-                                <span>До 180 см ширина</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-emerald-600">✓</span>
-                                <span>Встроенная подсветка</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-emerald-600">✓</span>
-                                <span>Кабель-менеджмент</span>
-                            </li>
-                        </ul>
-                        <a href="#form" class="block w-full bg-yellow-600 hover:bg-yellow-700 text-white text-center py-4 rounded-full font-semibold transition-colors duration-300">
-                            Заказать
-                        </a>
+                    
+                    <div class="bg-orange-50 rounded-xl p-3 mb-6">
+                        <p class="text-xs text-center text-orange-700">
+                            ✓ 8 из 10 функций • Оптимальный выбор
+                        </p>
                     </div>
+                    
+                    <a href="#form" class="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center py-4 rounded-full font-semibold transition-colors duration-300">
+                        Заказать
+                    </a>
+                </div>
+            </div>
+
+            <!-- Премиум конфигурация -->
+            <div class="border-4 border-yellow-400 rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 fade-in">
+                <div class="bg-yellow-100 p-8 h-64 flex items-center justify-center">
+                    <div class="text-center">
+                        <p class="text-yellow-700 font-bold text-xl mb-2">Премиум конфигурация</p>
+                        <p class="text-yellow-600 text-sm">До 180 см с кабель-менеджментом и подсветкой</p>
+                    </div>
+                </div>
+                <div class="p-8">
+                    <h3 class="text-3xl font-bold mb-2 text-emerald-900">Премиум</h3>
+                    <p class="text-4xl font-bold text-orange-600 mb-6">59 990 ₽</p>
+                    
+                    <!-- Характеристики -->
+                    <div class="space-y-3 mb-8 text-stone-700">
+                        <div class="flex items-start gap-3">
+                            <span class="text-emerald-600 text-xl flex-shrink-0">📏</span>
+                            <div class="flex-1">
+                                <p class="font-semibold text-sm text-stone-800">Размер столешницы</p>
+                                <p class="text-sm">До 180×120 см</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-3">
+                            <span class="text-emerald-600 text-xl flex-shrink-0">✓</span>
+                            <div class="flex-1">
+                                <p class="font-semibold text-sm text-stone-800">Регулировка высоты</p>
+                                <p class="text-sm">50-120 см (шаг 5 см)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-3">
+                            <span class="text-emerald-600 text-xl flex-shrink-0">✓</span>
+                            <div class="flex-1">
+                                <p class="font-semibold text-sm text-stone-800">Модулей в комплекте</p>
+                                <p class="text-sm">20+ штук</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-3">
+                            <span class="text-emerald-600 text-xl flex-shrink-0">✓</span>
+                            <div class="flex-1">
+                                <p class="font-semibold text-sm text-stone-800">Выбор цвета</p>
+                                <p class="text-sm">Любой RAL цвет</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-3">
+                            <span class="text-emerald-600 text-xl flex-shrink-0">✓</span>
+                            <div class="flex-1">
+                                <p class="font-semibold text-sm text-stone-800">Органайзеры</p>
+                                <p class="text-sm">5 модулей включено</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-3">
+                            <span class="text-emerald-600 text-xl flex-shrink-0">✓</span>
+                            <div class="flex-1">
+                                <p class="font-semibold text-sm text-stone-800">Кабель-менеджмент</p>
+                                <p class="text-sm">Премиум система</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-3">
+                            <span class="text-emerald-600 text-xl flex-shrink-0">✓</span>
+                            <div class="flex-1">
+                                <p class="font-semibold text-sm text-stone-800">Подсветка</p>
+                                <p class="text-sm">LED с регулировкой</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-3">
+                            <span class="text-emerald-600 text-xl flex-shrink-0">✓</span>
+                            <div class="flex-1">
+                                <p class="font-semibold text-sm text-stone-800">Крепления для техники</p>
+                                <p class="text-sm">Универсальные + VESA</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-3">
+                            <span class="text-emerald-600 text-xl flex-shrink-0">✓</span>
+                            <div class="flex-1">
+                                <p class="font-semibold text-sm text-stone-800">USB-хабы и розетки</p>
+                                <p class="text-sm">4 USB + 2 розетки 220В</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-3">
+                            <span class="text-emerald-600 text-xl flex-shrink-0">🛡️</span>
+                            <div class="flex-1">
+                                <p class="font-semibold text-sm text-stone-800">Гарантия</p>
+                                <p class="text-sm">5 лет + сервис</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-yellow-50 rounded-xl p-3 mb-6">
+                        <p class="text-xs text-center text-yellow-700">
+                            ✓ 10 из 10 функций • Максимум возможностей
+                        </p>
+                    </div>
+                    
+                    <a href="#form" class="block w-full bg-yellow-600 hover:bg-yellow-700 text-white text-center py-4 rounded-full font-semibold transition-colors duration-300">
+                        Заказать
+                    </a>
                 </div>
             </div>
         </div>
-    </section>
+        
+        <!-- Подсказка внизу -->
+        <div class="mt-12 text-center">
+            <p class="text-stone-600 text-lg">
+                💡 Все конфигурации можно дополнить модулями в любое время
+            </p>
+        </div>
+    </div>
+</section>
 
     <section class="py-20 bg-stone-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
