@@ -76,103 +76,107 @@
 
 <body class="bg-stone-50 text-stone-800">
 
-    <div class="bg-white shadow-md py-3 px-4 sticky top-0 z-50 border-b-2 border-emerald-600">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-            <p class="text-xs md:text-sm text-stone-700 text-center md:text-left flex-1">
-                Проект реализован при поддержке Фонда содействия инновациям в рамках программы «Студенческий стартап»
-                мероприятия «Платформа университетского технологического предпринимательства» федерального проекта
-                «Технологии»
-            </p>
-            <div class="flex gap-4 items-center">
-                <div class="bg-white px-4 py-2 rounded-xl">
-                    <img src="facier.svg" alt="Фонд содействия инновациям" class="h-12 md:h-16 w-auto">
-                </div>
-                <div class="bg-white px-4 py-2 rounded-xl">
-                    <img src="PUTP.png" alt="Платформа университетского технологического предпринимательства"
-                        class="h-12 md:h-16 w-auto">
+    <div id="hero-limit-container">
+        <div class="bg-white shadow-md py-3 px-4 sticky top-0 z-50 border-b-2 border-emerald-600">
+            <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+                <p class="text-xs md:text-sm text-stone-700 text-center md:text-left flex-1">
+                    Проект реализован при поддержке Фонда содействия инновациям в рамках программы «Студенческий
+                    стартап»
+                    мероприятия «Платформа университетского технологического предпринимательства» федерального проекта
+                    «Технологии»
+                </p>
+                <div class="flex gap-4 items-center">
+                    <div class="bg-white px-4 py-2 rounded-xl">
+                        <img src="facier.svg" alt="Фонд содействия инновациям" class="h-12 md:h-16 w-auto">
+                    </div>
+                    <div class="bg-white px-4 py-2 rounded-xl">
+                        <img src="PUTP.png" alt="Платформа университетского технологического предпринимательства"
+                            class="h-12 md:h-16 w-auto">
+                    </div>
                 </div>
             </div>
         </div>
+
+        <section class="relative min-h-screen flex items-center justify-center gradient-bg overflow-hidden pt-16 pb-48">
+            <div class="absolute top-20 left-10 floating">
+                <svg class="w-16 h-16 text-emerald-300 opacity-30" fill="currentColor" viewBox="0 0 20 20">
+                    <path
+                        d="M10 3.5a1.5 1.5 0 013 0V4a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-.5a1.5 1.5 0 000 3h.5a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-.5a1.5 1.5 0 00-3 0v.5a1 1 0 01-1 1H6a1 1 0 01-1-1v-3a1 1 0 00-1-1h-.5a1.5 1.5 0 010-3H4a1 1 0 001-1V6a1 1 0 011-1h3a1 1 0 001-1v-.5z" />
+                </svg>
+            </div>
+            <div class="absolute bottom-40 right-20 floating-delayed">
+                <svg class="w-20 h-20 text-emerald-400 opacity-20" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                        d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z"
+                        clip-rule="evenodd" />
+                </svg>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+                <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+                    EcoDesk: мебель, которая<br>растет вместе с вами
+                </h1>
+                <p class="text-xl md:text-2xl text-emerald-50 mb-12 max-w-3xl mx-auto font-light">
+                    Модульный стол из переработанного пластика.<br>Экологично. Практично. На всю жизнь.
+                </p>
+
+                <div
+                    class="relative rounded-3xl mb-12 mx-auto max-w-4xl overflow-hidden shadow-2xl border-4 border-white/40 aspect-video bg-white">
+
+                    <div id="heroSlides" class="w-full h-full">
+                        <div
+                            class="hero-slide absolute top-0 left-0 w-full h-full transition-opacity duration-500 ease-in-out opacity-100 bg-white">
+                            <img src="stol1.png" alt="Стол EcoDesk 1" class="w-full h-full object-contain">
+                        </div>
+                        <div
+                            class="hero-slide absolute top-0 left-0 w-full h-full transition-opacity duration-500 ease-in-out opacity-0 bg-white">
+                            <img src="stol2.png" alt="Стол EcoDesk 2" class="w-full h-full object-contain">
+                        </div>
+                        <div
+                            class="hero-slide absolute top-0 left-0 w-full h-full transition-opacity duration-500 ease-in-out opacity-0 bg-white">
+                            <img src="stol3.png" alt="Стол EcoDesk 3" class="w-full h-full object-contain">
+                        </div>
+                    </div>
+
+                    <button id="heroPrev"
+                        class="absolute top-1/2 left-4 -translate-y-1/2 bg-emerald-600 hover:bg-emerald-700 text-white p-3 rounded-full shadow-lg transition-all duration-300 z-20">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <button id="heroNext"
+                        class="absolute top-1/2 right-4 -translate-y-1/2 bg-emerald-600 hover:bg-emerald-700 text-white p-3 rounded-full shadow-lg transition-all duration-300 z-20">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                    <a href="#form"
+                        class="bg-orange-500 hover:bg-orange-600 text-white px-10 py-5 rounded-full text-lg font-semibold shadow-2xl transform hover:scale-105 transition-all duration-300">
+                        Собрать свой стол
+                    </a>
+                    <a href="#problem"
+                        class="bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white border-2 border-white px-10 py-5 rounded-full text-lg font-semibold transition-all duration-300">
+                        Узнать больше ↓
+                    </a>
+                </div>
+            </div>
+
+            <div class="absolute bottom-0 left-0 w-full">
+                <svg viewBox="0 0 1440 120" class="w-full h-auto">
+                    <path fill="#F5F1E8"
+                        d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z">
+                    </path>
+                </svg>
+            </div>
+        </section>
     </div>
-
-    <section class="relative min-h-screen flex items-center justify-center gradient-bg overflow-hidden pt-16 pb-48">
-        <div class="absolute top-20 left-10 floating">
-            <svg class="w-16 h-16 text-emerald-300 opacity-30" fill="currentColor" viewBox="0 0 20 20">
-                <path
-                    d="M10 3.5a1.5 1.5 0 013 0V4a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-.5a1.5 1.5 0 000 3h.5a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-.5a1.5 1.5 0 00-3 0v.5a1 1 0 01-1 1H6a1 1 0 01-1-1v-3a1 1 0 00-1-1h-.5a1.5 1.5 0 010-3H4a1 1 0 001-1V6a1 1 0 011-1h3a1 1 0 001-1v-.5z" />
-            </svg>
-        </div>
-        <div class="absolute bottom-40 right-20 floating-delayed">
-            <svg class="w-20 h-20 text-emerald-400 opacity-20" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd"
-                    d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z"
-                    clip-rule="evenodd" />
-            </svg>
-        </div>
-
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-                EcoDesk: мебель, которая<br>растет вместе с вами
-            </h1>
-            <p class="text-xl md:text-2xl text-emerald-50 mb-12 max-w-3xl mx-auto font-light">
-                Модульный стол из переработанного пластика.<br>Экологично. Практично. На всю жизнь.
-            </p>
-
-            <div
-                class="relative rounded-3xl mb-12 mx-auto max-w-4xl overflow-hidden shadow-2xl border-4 border-white/40 aspect-video bg-white">
-
-                <div id="heroSlides" class="w-full h-full">
-                    <div
-                        class="hero-slide absolute top-0 left-0 w-full h-full transition-opacity duration-500 ease-in-out opacity-100 bg-white">
-                        <img src="stol1.png" alt="Стол EcoDesk 1" class="w-full h-full object-contain">
-                    </div>
-                    <div
-                        class="hero-slide absolute top-0 left-0 w-full h-full transition-opacity duration-500 ease-in-out opacity-0 bg-white">
-                        <img src="stol2.png" alt="Стол EcoDesk 2" class="w-full h-full object-contain">
-                    </div>
-                    <div
-                        class="hero-slide absolute top-0 left-0 w-full h-full transition-opacity duration-500 ease-in-out opacity-0 bg-white">
-                        <img src="stol3.png" alt="Стол EcoDesk 3" class="w-full h-full object-contain">
-                    </div>
-                </div>
-
-                <button id="heroPrev"
-                    class="absolute top-1/2 left-4 -translate-y-1/2 bg-emerald-600 hover:bg-emerald-700 text-white p-3 rounded-full shadow-lg transition-all duration-300 z-20">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
-                        </path>
-                    </svg>
-                </button>
-                <button id="heroNext"
-                    class="absolute top-1/2 right-4 -translate-y-1/2 bg-emerald-600 hover:bg-emerald-700 text-white p-3 rounded-full shadow-lg transition-all duration-300 z-20">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                    </svg>
-                </button>
-            </div>
-
-            <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
-                <a href="#form"
-                    class="bg-orange-500 hover:bg-orange-600 text-white px-10 py-5 rounded-full text-lg font-semibold shadow-2xl transform hover:scale-105 transition-all duration-300">
-                    Собрать свой стол
-                </a>
-                <a href="#problem"
-                    class="bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white border-2 border-white px-10 py-5 rounded-full text-lg font-semibold transition-all duration-300">
-                    Узнать больше ↓
-                </a>
-            </div>
-        </div>
-
-        <div class="absolute bottom-0 left-0 w-full">
-            <svg viewBox="0 0 1440 120" class="w-full h-auto">
-                <path fill="#F5F1E8"
-                    d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z">
-                </path>
-            </svg>
-        </div>
-    </section>
 
     <section id="problem" class="py-20 bg-stone-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -240,7 +244,8 @@
                         <span class="text-5xl">🎨</span>
                     </div>
                     <h3 class="text-2xl font-bold mb-4 text-emerald-900">Выбираете конфигурацию</h3>
-                    <p class="text-lg text-stone-600">Размер, цвет, дополнительные модули — соберите идеальный стол под
+                    <p class="text-lg text-stone-600">Размер, цвет, дополнительные модули — соберите идеальный стол
+                        под
                         ваши задачи</p>
                 </div>
 
@@ -277,7 +282,8 @@
                     class="glass-card rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-shadow duration-300 fade-in">
                     <div class="text-5xl mb-4">🌱</div>
                     <h3 class="text-2xl font-bold mb-3 text-emerald-900">Экологично</h3>
-                    <p class="text-lg text-stone-600">Снижение выбросов CO₂ на 60% по сравнению с обычной мебелью</p>
+                    <p class="text-lg text-stone-600">Снижение выбросов CO₂ на 60% по сравнению с обычной мебелью
+                    </p>
                 </div>
 
                 <div
@@ -305,7 +311,8 @@
                     class="glass-card rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-shadow duration-300 fade-in">
                     <div class="text-5xl mb-4">♻️</div>
                     <h3 class="text-2xl font-bold mb-3 text-emerald-900">Переработка</h3>
-                    <p class="text-lg text-stone-600">Программа trade-in: возврат до 30% при сдаче старых модулей</p>
+                    <p class="text-lg text-stone-600">Программа trade-in: возврат до 30% при сдаче старых модулей
+                    </p>
                 </div>
 
                 <div
@@ -769,7 +776,8 @@
                     class="bg-gradient-to-br from-pink-50 to-pink-100 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 fade-in">
                     <div class="text-6xl mb-4">👨‍👩‍👧</div>
                     <h3 class="text-2xl font-bold mb-3 text-emerald-900">Семьи с детьми</h3>
-                    <p class="text-stone-600">Стол растет вместе с ребенком — от детского до взрослого рабочего места
+                    <p class="text-stone-600">Стол растет вместе с ребенком — от детского до взрослого рабочего
+                        места
                     </p>
                 </div>
 
@@ -791,7 +799,8 @@
                     class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 fade-in">
                     <div class="text-6xl mb-4">🏢</div>
                     <h3 class="text-2xl font-bold mb-3 text-emerald-900">Бизнес</h3>
-                    <p class="text-stone-600">ESG-решение для офисов и коворкингов с быстрой трансформацией пространства
+                    <p class="text-stone-600">ESG-решение для офисов и коворкингов с быстрой трансформацией
+                        пространства
                     </p>
                 </div>
             </div>
@@ -856,7 +865,8 @@
                             class="text-emerald-600 text-2xl group-open:rotate-180 transition-transform duration-300">▼</span>
                     </summary>
                     <div class="p-6 pt-0 text-stone-600 text-lg">
-                        Стол выдерживает нагрузку до 50 кг и рассчитан на срок службы более 10 лет. Мы даем гарантию 5
+                        Стол выдерживает нагрузку до 50 кг и рассчитан на срок службы более 10 лет. Мы даем гарантию
+                        5
                         лет на все модули. Материал устойчив к влаге, царапинам и не выгорает на солнце.
                     </div>
                 </details>
@@ -869,7 +879,8 @@
                             class="text-emerald-600 text-2xl group-open:rotate-180 transition-transform duration-300">▼</span>
                     </summary>
                     <div class="p-6 pt-0 text-stone-600 text-lg">
-                        Сборка занимает 15-20 минут и не требует инструментов. Модули соединяются системой шип-паз по
+                        Сборка занимает 15-20 минут и не требует инструментов. Модули соединяются системой шип-паз
+                        по
                         принципу конструктора. В комплекте идет подробная инструкция с QR-кодом на видео-гайд.
                     </div>
                 </details>
@@ -896,7 +907,8 @@
                             class="text-emerald-600 text-2xl group-open:rotate-180 transition-transform duration-300">▼</span>
                     </summary>
                     <div class="p-6 pt-0 text-stone-600 text-lg">
-                        У нас действует программа trade-in: вы можете сдать старые или ненужные модули и получить скидку
+                        У нас действует программа trade-in: вы можете сдать старые или ненужные модули и получить
+                        скидку
                         до 30% на новые. Мы переработаем их и напечатаем новую мебель — замкнутый цикл!
                     </div>
                 </details>
@@ -910,7 +922,8 @@
                     </summary>
                     <div class="p-6 pt-0 text-stone-600 text-lg">
                         Производство вашего стола занимает 7-10 дней, доставка по России — 3-7 дней в зависимости от
-                        региона. Итого от заказа до получения: 10-17 дней. Мы уведомляем о каждом этапе производства.
+                        региона. Итого от заказа до получения: 10-17 дней. Мы уведомляем о каждом этапе
+                        производства.
                     </div>
                 </details>
 
@@ -937,7 +950,8 @@
                     </summary>
                     <div class="p-6 pt-0 text-stone-600 text-lg">
                         Для корпоративных заказов от 10 столов мы предлагаем специальные условия: скидки до 20%,
-                        кастомные цвета под бренд, ускоренное производство и монтаж на объекте. Свяжитесь с нами через
+                        кастомные цвета под бренд, ускоренное производство и монтаж на объекте. Свяжитесь с нами
+                        через
                         форму ниже.
                     </div>
                 </details>
